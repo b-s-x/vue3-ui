@@ -11,11 +11,11 @@ const props = defineProps({
 import { defineComponent, h } from 'vue'
 
 export default defineComponent({
-  render({ props, $slots, attrs }) {
+  render({ props, $slots, $attrs }) {
     return h(
       `h${props.level}`,
       {
-        ...attrs,
+        ...$attrs,
         class: [
           'title',
           `title_h${props.level}`
