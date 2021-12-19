@@ -1,9 +1,9 @@
 <script setup lang="ts">
-import UsageCustomSpinner from './usage/UsageCustomSpinner.vue';
+import UsageCustomButton from './usage/UsageCustomButton.vue';
 </script>
 
 <template>
-  <UsageCustomSpinner />
+  <UsageCustomButton />
 </template>
 
 <style>
