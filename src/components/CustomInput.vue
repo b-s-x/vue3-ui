@@ -68,8 +68,8 @@ const mapType = (type: string): string => {
   return type;
 };
 
-const createInputHandler = (e: Event): void => emit('input', e.target.value);
-const createKeydownHandler = (e: Event): void => emit('keydown', e.keyCode || e.which);
+const handleInput = (e: Event): void => emit('input', e.target.value);
+const handleKeydown = (e: Event): void => emit('keydown', e.keyCode || e.which);
 
 </script>
 
@@ -94,8 +94,8 @@ const createKeydownHandler = (e: Event): void => emit('keydown', e.keyCode || e.
         {'input_input_error': props.error},
         {'input_input_empty': !props.value},
       ]"
-      @input="createInputHandler"
-      @keydown="createKeydownHandler"
+      @input="handleInput"
+      @keydown="handleKeydown"
     />
     <span
       class="input_tooltip"
