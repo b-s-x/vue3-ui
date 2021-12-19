@@ -1,9 +1,9 @@
 <script setup lang="ts">
-import UsageCustomTextarea from './usage/UsageCustomTextarea.vue';
+import UsageCustomSpinner from './usage/UsageCustomSpinner.vue';
 </script>
 
 <template>
-  <UsageCustomTextarea />
+  <UsageCustomSpinner />
 </template>
 
 <style>
