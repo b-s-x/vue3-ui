@@ -1,9 +1,9 @@
 <script setup lang="ts">
-import UsageCustomTitle from './usage/UsageCustomTitle.vue';
+import UsageCustomTextarea from './usage/UsageCustomTextarea.vue';
 </script>
 
 <template>
-  <UsageCustomTitle />
+  <UsageCustomTextarea />
 </template>
 
 <style>
