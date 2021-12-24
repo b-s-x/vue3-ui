@@ -1,9 +1,9 @@
 <script setup lang="ts">
-import UsageCustomButton from './usage/UsageCustomButton.vue';
+import UsageCustomTable from './usage/UsageCustomTable.vue';
 </script>
 
 <template>
-  <UsageCustomButton />
+  <UsageCustomTable />
 </template>
 
 <style>
