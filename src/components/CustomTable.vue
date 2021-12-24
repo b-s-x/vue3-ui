@@ -23,7 +23,8 @@ import { defineComponent } from 'vue'
 export default defineComponent({
   render({ props, $slots, $attrs }: any) {
     const ContainerTag: any = props.containerTag || 'div';
-    const rows = $slots.default().filter(({ type }: {type: string}): boolean => type === 'tr');
+    // const rows = $slots.default().filter(({ type }: {type: string}): boolean => type === 'tr');
+    const rows = $slots.default();
     const handleFilter = (e: Event): void => {
       if (props.containerTag === 'form') {
         e.preventDefault();
